@@ -1,0 +1,35 @@
+body{background-color: #D43F3A;font-family:"Microsoft YaHei"!important;}
+body,html,p,ul{margin:0;padding:0}
+body {
+/*    background: -webkit-linear-gradient(left, #a10009 , #b7000b,#a10009)); 
+    background: -o-linear-gradient(right, #a10009 , #b7000b,#a10009)); 
+    background: -moz-linear-gradient(right, #a10009 , #b7000b,#a10009)); */
+    background: linear-gradient(to right, #a10009 , #b7000b,#a10009); /* 标准的语法（必须放在最后） */
+}
+::-webkit-scrollbar{height:3px;width:0px !important;}
+body,html{position:relative;height:100%}
+#showtheresult{position:fixed;bottom:0;width:100%;color:#F0AD4E;font-size:16px}
+.swiper-container{width:100%;height:100%;max-width: 400px;max-height: 700px;min-width: 300px;min-height: 500px;}
+.swiper-slide{text-align:center;font-size:18px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;margin-bottom:1px}
+.swiper-slide img{width:100%}
+.swiper-slide2{background: linear-gradient(to right, #d79c4e , #da9e4f,#d79c4e);}
+  .swiper-slide2 .active_table{border-color: #4f1518;color: #4f1518;width: 90%;    margin-top: 10%;}  
+.swiper-slide2 .active_table td{padding:20px 10px}
+.swiper-slide3 .result{z-index: 10;margin-top: -70%;opacity:0;}
+.swiper-slide3 .result .title{font-size: 45px;font-weight: bold;color: #5e3f03;}
+.swiper-slide3 .result .earnmoney{font-size: 25px;color: #5e3f03;padding-top:10%;}
+.swiper-slide3 .result .text{float: left;}
+.swiper-slide3 .result .money_value{color:#b4000b;width: 45px;text-align: center;    float: left;}
+.swiper-slide3 .winner{padding:5px;    border: 1px solid #efc672;
+    left: 8%;
+    width: 84%;
+    position: absolute;
+    bottom: 10%;
+    border-radius: 5px;
+    height: 110px;
+    overflow: hidden;
+    box-shadow: 5px 5px 50px #900 inset;
+    opacity:0;
+    }
+.swiper-slide3 .winner .winner_data{color:#fff;font-size:16px;padding:5px 0;}
+.swiper-slide3 .winner .winner_data .gold{color:#f7dc91;}

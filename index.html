@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>南粤红包</title>
+		<link rel="stylesheet" href="lib/bootstrap.min.css" />
+		<link rel="stylesheet" href="lib/swiper.min.css" />
+		<link rel="stylesheet" href="css/redpacketsdemo.css" />
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/redpacketsdemo.js"></script>
+	</head>
+
+	<body>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-slide1">
+					<img id="page1_top" src="img/page1_top.png" style="top: 0;position: absolute;left: 0;" />
+					<img id="page1_button" onclick="StartToDraw()" src="img/page1_button_n.png" style="width: 50%;    margin-top: 20%;" />
+					<img id="page1_bottom" class="next_page" src="img/page1_bottom.png" style="position: absolute;left: 0;bottom: 0;" />
+				</div>
+				<div class="swiper-slide swiper-slide2">
+					<img class="prev_page" src="img/page2_top.png" style="top: 0;position: absolute;left: 0;" />
+					<!--<img src="img/page2_data.png" style="position: absolute;left: 0;bottom: 0;" />-->
+					<table class="active_table" border="1" >
+						<tr>
+							<td>星期一</td>
+							<td>抢红包</td>
+							<td>南粤和平支行</td>
+						</tr>
+						<tr>
+							<td>星期二</td>
+							<td>抢红包</td>
+							<td>南粤和平支行</td>
+						</tr>
+						<tr>
+							<td>星期三</td>
+							<td>砸金蛋</td>
+							<td>南粤和平支行</td>
+						</tr>
+						<tr>
+							<td>星期四</td>
+							<td>砸金蛋</td>
+							<td>南粤和平支行</td>
+						</tr>
+						<tr>
+							<td>星期五</td>
+							<td>抢红包</td>
+							<td>南粤和平支行</td>
+						</tr>
+					</table>
+					<img src="img/logo.png" style="position: absolute;bottom:2%;left:50%;margin-left:-20%;width:40%;" />
+				</div>
+			</div>
+			<!-- Add Pagination -->
+
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/swiper.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: false,
+			onlyExternal: true,
+			nextButton: '.next_page',
+			prevButton: '.prev_page',
+			direction: 'vertical'
+		});
+	</script>
+
+</html>
